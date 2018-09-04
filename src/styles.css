@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+canvas {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
+}
+
+.btn-start {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    width: 90px;
+    height: 90px;
+    background: #35B24C;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #35B24C;
+    border-radius: 50%;
+}
+
+.btn-start:hover {
+    background:#004c3e;
+    border-color: #004c3e;
+}
+
+.btn-start:active {
+    background-color: #00816A;
+    border-color: #00816A;
+}
+
+.btn-stop {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    width: 90px;
+    height: 90px;
+    background: #FF4400;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FF4400;
+    border-radius: 50%;
+}
+
+.btn-stop:hover {
+    background:#a82c00;
+    border-color: #a82c00;
+}
+
+.btn-stop:active {
+    background-color: #FF4400;
+    border-color: #FF4400;
+}
+
+
+
+
