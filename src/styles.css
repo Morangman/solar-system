@@ -5,6 +5,26 @@ canvas {
 
 }
 
+.input > p{
+    position: absolute;
+    color: white;
+    left: 38%;
+    margin-top: 1px;
+}
+
+.input {
+    position: absolute;
+    top: 25%;
+    margin-left: 75px;
+}
+
+.input > label {
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
 .btn-start {
     position: absolute;
     top: 10%;

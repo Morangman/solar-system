@@ -15,7 +15,9 @@ export class AppComponent {
     private planetMass: number = 1;
     private planetDistance: number = 1;
     private planetRadius: number = 4.2588e-5 * this.planetDistance;
-    private planetAroundSun: number = 365.2564;
+    public planetAroundSun: number = 365.2564;
+
+    public speed: number = 0;
 
     private fps: number = 5;
 
@@ -46,7 +48,7 @@ export class AppComponent {
         this.background.src = "assets/background.jpg";
         this.ship.src = "assets/ship2.png";
 
-            //добавление в массив planets данных о планетах
+            // добавление в массив planets данных о планетах
         this.planets.push
         (
             {name:"Sun",
@@ -208,6 +210,13 @@ export class AppComponent {
     animStart(){ this.animation = true; } //кнопка старт
 
     animStop(){ this.animation = false; } //кнопка стоп
+
+    onEnter(value: number) {
+
+        if(!value || value <= 0){
+            this.planetAroundSun = 365.2564;
+        }
+    }
 
     draw() {
 

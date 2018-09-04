@@ -7,5 +7,9 @@
   <input class="btn-stop" type="button" value="Stop" (click)="animStop()"/>
 </div>
 
-
+<div class="input">
+  <label>Speed:</label>
+  <input #box type="number" min="0" (keyup)="planetAroundSun = box.value; onEnter(box.value);">
+  <p>*days around the Sun</p>
+</div>
 
